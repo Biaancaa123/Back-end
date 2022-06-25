@@ -1,0 +1,716 @@
+{
+	"info": {
+		"_postman_id": "b75d1206-6263-4732-8c69-b9da39b439c7",
+		"name": "app_donitos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "Insertar_usu",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1hcmNvcyIsImlkIjoxLCJpYXQiOjE2NTYwOTc2MDR9.8-qoORuGdCtq_REfdaIIhvgz8ybEOAC5O6lHXcXi1fo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_usu\": 3,\r\n    \"nombre\": \"Abel\",\r\n    \"apellido\": \"Nuñez\",\r\n    \"email\": \"anuñez@gmail.com\",\r\n    \"pass\": \"456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/usuarios/create",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"usuarios",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar_usu",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1hcmNvcyIsImlkIjoxLCJpYXQiOjE2NTYwOTc2MDR9.8-qoORuGdCtq_REfdaIIhvgz8ybEOAC5O6lHXcXi1fo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/usuarios/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"usuarios",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar_usu_id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1hcmNvcyIsImlkIjoxLCJpYXQiOjE2NTYwOTc2MDR9.8-qoORuGdCtq_REfdaIIhvgz8ybEOAC5O6lHXcXi1fo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/usuarios/find/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"usuarios",
+								"find",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar_usu",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1hcmNvcyIsImlkIjoxLCJpYXQiOjE2NTYwOTc2MDR9.8-qoORuGdCtq_REfdaIIhvgz8ybEOAC5O6lHXcXi1fo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_usu\": 3,\r\n    \"nombre\": \"Abel\",\r\n    \"apellido\": \"Nuñez\",\r\n    \"email\": \"abelnuñez@gmail.com\",\r\n    \"pass\": \"456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/usuarios/update",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"usuarios",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar_usu",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1hcmNvcyIsImlkIjoxLCJpYXQiOjE2NTYwOTc2MDR9.8-qoORuGdCtq_REfdaIIhvgz8ybEOAC5O6lHXcXi1fo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/usuarios/remove/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"usuarios",
+								"remove",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login_usu",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Marcos\",\r\n    \"passwd\": \"Marcos123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/usuarios/login",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"usuarios",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout_usu",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1hcmNvcyIsImlkIjoxLCJpYXQiOjE2NTYwOTc2MDR9.8-qoORuGdCtq_REfdaIIhvgz8ybEOAC5O6lHXcXi1fo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Marcos\",\r\n    \"password\": \"123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/usuarios/login",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"usuarios",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/rolusu/remove/2",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1hcmNvcyIsImlkIjoxLCJpYXQiOjE2NTYwOTc2MDR9.8-qoORuGdCtq_REfdaIIhvgz8ybEOAC5O6lHXcXi1fo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/rolusu/remove/2",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"rolusu",
+								"remove",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ciudad",
+			"item": [
+				{
+					"name": "Listar_ciudad",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"connection": true,
+							"accept-encoding": true,
+							"accept": true,
+							"user-agent": true,
+							"host": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1hcmNvcyIsImlkIjoxLCJpYXQiOjE2NTYwOTc2MDR9.8-qoORuGdCtq_REfdaIIhvgz8ybEOAC5O6lHXcXi1fo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/ciudad/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ciudad",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar_ciudad_id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1hcmNvcyIsImlkIjoxLCJpYXQiOjE2NTYwOTc2MDR9.8-qoORuGdCtq_REfdaIIhvgz8ybEOAC5O6lHXcXi1fo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/ciudad/find/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ciudad",
+								"find",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insertar_ciudad",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1hcmNvcyIsImlkIjoxLCJpYXQiOjE2NTYwOTc2MDR9.8-qoORuGdCtq_REfdaIIhvgz8ybEOAC5O6lHXcXi1fo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_ciudad\": 3,\r\n    \"ciudad\":\"km7\",\r\n    \"direccion\":\"avda amado benitez\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/ciudad/create",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ciudad",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar_ciudad",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1hcmNvcyIsImlkIjoxLCJpYXQiOjE2NTYwOTc2MDR9.8-qoORuGdCtq_REfdaIIhvgz8ybEOAC5O6lHXcXi1fo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_ciudad\": 2,\r\n    \"ciudad\":\"Franco\",\r\n    \"direccion\":\"Avd Carlos Lopez\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/ciudad/update?",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ciudad",
+								"update"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar_ciudad",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1hcmNvcyIsImlkIjoxLCJpYXQiOjE2NTYwOTc2MDR9.8-qoORuGdCtq_REfdaIIhvgz8ybEOAC5O6lHXcXi1fo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/ciudad/remove/3",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ciudad",
+								"remove",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Hospital",
+			"item": [
+				{
+					"name": "Listar_hos",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1hcmNvcyIsImlkIjoxLCJpYXQiOjE2NTYwOTc2MDR9.8-qoORuGdCtq_REfdaIIhvgz8ybEOAC5O6lHXcXi1fo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/hospital/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"hospital",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar_hos_id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1hcmNvcyIsImlkIjoxLCJpYXQiOjE2NTYwOTc2MDR9.8-qoORuGdCtq_REfdaIIhvgz8ybEOAC5O6lHXcXi1fo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/hospital/find/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"hospital",
+								"find",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insertar_hos",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1hcmNvcyIsImlkIjoxLCJpYXQiOjE2NTYwOTc2MDR9.8-qoORuGdCtq_REfdaIIhvgz8ybEOAC5O6lHXcXi1fo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_hos\":\"2\",\r\n    \"nombre_hos\":\"Centro de Salud\",\r\n    \"descripcion\":\"Franco\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/hospital/create",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"hospital",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar_hos",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1hcmNvcyIsImlkIjoxLCJpYXQiOjE2NTYwOTc2MDR9.8-qoORuGdCtq_REfdaIIhvgz8ybEOAC5O6lHXcXi1fo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_hos\":\"2\",\r\n    \"nombre_hos\":\"Centro de Salud\",\r\n    \"descripcion\":\"Franco\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/hospital/update",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"hospital",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar_hos",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1hcmNvcyIsImlkIjoxLCJpYXQiOjE2NTYwOTc2MDR9.8-qoORuGdCtq_REfdaIIhvgz8ybEOAC5O6lHXcXi1fo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/hospital/remove/2?",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"hospital",
+								"remove",
+								"2"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "localhost:3000/rolusu/remove/2",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1hcmNvcyIsImlkIjoxLCJpYXQiOjE2NTYwOTc2MDR9.8-qoORuGdCtq_REfdaIIhvgz8ybEOAC5O6lHXcXi1fo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/rolusu/remove/12",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"rolusu",
+						"remove",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/rolusu/update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1hcmNvcyIsImlkIjoxLCJpYXQiOjE2NTYwOTc2MDR9.8-qoORuGdCtq_REfdaIIhvgz8ybEOAC5O6lHXcXi1fo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 12,\r\n    \"fecha\": \"25/06/2021\",\r\n    \"descripcion\":\"Probando12\",\r\n    \"usuario\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/rolusu/update",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"rolusu",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/rolusu/create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1hcmNvcyIsImlkIjoxLCJpYXQiOjE2NTYwOTc2MDR9.8-qoORuGdCtq_REfdaIIhvgz8ybEOAC5O6lHXcXi1fo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"fecha\": \"22/06/2021\",\r\n    \"descripcion\":\"aver\",\r\n    \"usuario\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/rolusu/create",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"rolusu",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/rolusu/find/3",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1hcmNvcyIsImlkIjoxLCJpYXQiOjE2NTYwOTc2MDR9.8-qoORuGdCtq_REfdaIIhvgz8ybEOAC5O6lHXcXi1fo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/rolusu/find/3",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"rolusu",
+						"find",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/rolusu/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1hcmNvcyIsImlkIjoxLCJpYXQiOjE2NTYwOTc2MDR9.8-qoORuGdCtq_REfdaIIhvgz8ybEOAC5O6lHXcXi1fo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/rolusu/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"rolusu",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
