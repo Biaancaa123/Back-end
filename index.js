@@ -22,6 +22,9 @@ app.use('/ciudad', ciudadRouter);
 const hospitalRouter = require('./back/routes/hospital_routes');
 app.use('/hospital', hospitalRouter);
 
+const rolUsuarioRouter = require('./back/routes/rol_routes');
+app.use('/rolusu', rolUsuarioRouter);
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });

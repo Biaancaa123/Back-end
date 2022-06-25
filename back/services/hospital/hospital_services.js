@@ -12,6 +12,7 @@ const list = async (query, pageStart = 1, pageLimit = 10) => {
   return hospitalArray;
 };
 
+
 const getById = async (codigo) => {
   const hospitalModelResult = await HospitalModel.findByPk(codigo);
 
